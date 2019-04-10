@@ -1,0 +1,542 @@
+body{
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+.topLeft, .topRight, .middle, .bottom, footer, .main h1, .mainLeft, .mainRight, 
+.importanceLeft h3, .importanceRight h3, .qaSecurityKnowlage, .qaContent h1, .plan, .applyTop h2, .apllyText, .applyLeft, .contactForm, .contact{
+    padding-top: 50px;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.preLoad{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    position: fixed;
+    z-index: 999;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.wrapp{
+    position: relative;
+}
+.preloadContent{
+    position: absolute;
+    left: 50%;
+    margin-top: 10%;
+    transform: translateX(-50%);
+}
+.preLoad img{
+    display: block;
+    width: 200px;
+    padding-bottom: 50%;
+}
+.spiner{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-top: 2px solid #2997ab;
+    border-radius: 100%;
+    animation: spin 0.5s linear infinite;
+}
+@keyframes spin{
+    from{ transform:rotate(0deg) }
+    to{ transform: rotate(360deg) }
+}
+@-webkit-keyframes spin{
+    from{ transform:rotate(0deg) }
+    to{ transform: rotate(360deg) }
+}
+@-moz-keyframes spin{
+    from{ transform:rotate(0deg) }
+    to{ transform: rotate(360deg) }
+}
+@-o-keyframes spin{
+    from{ transform:rotate(0deg) }
+    to{ transform: rotate(360deg) }
+}
+/*-----------------------------index.html------------------*/
+/*********
+NAVIGATION
+**********/
+.logoAndNav{
+    padding-top: 2px;
+}
+.logoAndNav img{
+    width: 100px;
+}
+.navbar-nav{
+    float: right;
+}
+.navbar-default{
+    font-size: 17px;
+    font-weight: 900;
+    border: none;
+    background: transparent;
+}
+.navbar{
+    margin-bottom: 0;
+}
+.active{
+    border-bottom: 2px solid #2997ab;;
+}
+.active a{
+    background-color: transparent!important;
+}
+/*********
+CAROUSEL
+**********/
+.item img{
+    width: 100%;
+}
+a.right.carousel-control, a.left.carousel-control{
+    height: 100px;
+    width: 2%;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+a.right.carousel-control{
+    border-radius: 3px 0 0 3px;
+}
+a.left.carousel-control{
+    border-radius: 0 3px 3px 0;
+}
+.carousel-control:focus, .carousel-control:hover{
+    background: rgba(0, 0, 0, 0.3)!important;
+}
+.glyphicon-chevron-right:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border-top:2px solid #fff;
+    border-right:2px solid #fff;
+    border-bottom:2px solid transparent;
+    border-left:2px solid transparent;
+    transform: rotate(45deg);
+}
+.glyphicon-chevron-left:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-top:2px solid transparent;
+    border-right:2px solid transparent;
+    border-bottom:2px solid #fff;
+    border-left:2px solid #fff;
+    transform: rotate(45deg);
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    border: none;
+}
+.carousel-indicators .active{
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+}
+.carousel-caption{
+    top: 40%;
+    text-shadow: none;
+    font-size: 20px;
+    text-align: left;
+}
+.carousel-caption h2{
+    display: inline-block;
+    font-weight: 900;
+    background: rgb(63, 167, 175)!important;
+    padding: 3%;
+    margin-bottom: 2px;
+}
+.carousel-caption p{
+    background: rgb(63, 167, 175)!important;
+    padding: 3%;
+}
+.text{
+    position: absolute;
+    max-width: 450px;
+}
+.second .text{
+    right: 0;
+}
+/*animation*/
+.first h2{
+    transform: translateX(-1000px);
+    animation: showHtext 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 2s;
+}
+.first p{
+    transform: translateX(2000px);
+    animation: showPtext 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 2s;
+}
+.second h2{
+    transform: translateX(-3500px);
+    animation: showHtext 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 1s;
+}
+.second p{
+    transform: translateX(2000px);
+    animation: showPtext 0.5s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 1s;
+}
+@-webkit-keyframes showHtext{
+    from{ transform:translateX(-1000px); opacity: 0; }
+    to{transform:translateX(0); opacity: 1;}
+}
+@-webkit-keyframes showPtext{
+    from{ transform:translateX(2000px) }
+    to{transform:translateX(0)}
+}
+@-moz-keyframes showHtext{
+    from{ transform:translateX(-1000px); opacity: 0; }
+    to{transform:translateX(0); opacity: 1;}
+}
+@-moz-keyframes showPtext{
+    from{ transform:translateX(2000px) }
+    to{transform:translateX(0)}
+}
+@-o-keyframes showHtext{
+    from{ transform:translateX(-1000px); opacity: 0; }
+    to{transform:translateX(0); opacity: 1;}
+}
+@-o-keyframes showPtext{
+    from{ transform:translateX(2000px) }
+    to{transform:translateX(0)}
+}
+@keyframes showHtext{
+    from{ transform:translateX(-1000px); opacity: 0; }
+    to{transform:translateX(0); opacity: 1;}
+}
+@keyframes showPtext{
+    from{ transform:translateX(2000px) }
+    to{transform:translateX(0)}
+}
+/*********
+TOP
+**********/
+.topLeft, .topRight, .middle, .bottom{
+    font-size: 18px;
+    color: #555;
+}
+
+.topRight img, .bottom img{
+    width: 100%;
+}
+/*********
+FOOTER
+**********/
+.pera{
+    font-size: 12px;
+    color: #fff;
+    background: #000;
+    padding: 15px;
+}
+/*---------------------------------------qa-kurs.html---------------------------*/
+/*********
+QA MAIN
+**********/
+.main{
+    background-color: #f8f8f8;
+}
+.main h1{
+    font-weight: 900;
+}
+
+.mainLeft{
+    color: #555;
+}
+.mainLeft ul li{
+    line-height: 1.8;
+}
+.mainLeft p:nth-child(1), .mainLeft p:nth-child(2), .mainLeft p:nth-child(3) {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+.mainLeft p:nth-child(5){
+    font-size: 20px;
+    padding-left: 20px;
+    border-left: 7px solid #2997ab;
+    line-height: 1.5;
+}
+.mainRight img{
+    width: 100%;
+}
+/************
+QA IMPORTANCE
+*************/
+.importance{
+    color: #555;
+    line-height: 1.8;
+}
+.importanceLeft ul, .importanceRight ul{
+    padding-top: 25px;
+}
+.importanceLeft h3, .importanceRight h3{
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+}
+/*******************
+QA SECURITY KNOWLAGE
+********************/
+.qaSecurityKnowlage{
+    color: #555;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    line-height: 2;
+}
+.qaSecurityKnowlage h3{
+    color: #000;
+    text-align: center;
+    font-weight: 900;
+}
+.qaSecurityKnowlageText{
+    padding-top: 15px;
+}
+/*******************
+QA CONTENT
+********************/
+.qaContent{
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ccc;
+    line-height: 1.8;
+}
+.qaContent h1, .qaContent h4{
+    font-weight: 900;
+    text-align: center;
+}
+.qaContent h1{
+    padding-bottom: 50px;
+}
+.qaContent h4{
+    padding-bottom: 15px;
+}
+.qaContentText{
+    padding-bottom: 50px;
+}
+/*******************
+QA PLAN
+********************/
+.plan{
+    color: #555;
+    line-height: 2.5;
+}
+.plan h3{
+    font-weight: 900;
+    color: #000;
+}
+.plan a{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #2997ab;
+    text-decoration: none;
+    padding: 0 30px;
+    border-radius: 3px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+.plan a:hover{
+    transform: scale(1.1);
+}
+/*-------------------------prijava-za-kurs.html--------------------------------*/
+.apply{
+    color: #555;
+    background-color: #f8f8f8;
+    line-height: 1.8;
+}
+.apply p{
+    font-size: 20px;
+    color: #808080;
+    font-weight: 900;
+    padding-left: 15px;
+    border-left: 7px solid #2997ab;
+    line-height: 1;
+}
+.applyTop h2{
+    font-weight: 900;
+    color: #000;
+    text-align: center;
+}
+.applyLeft img{
+    width: 200px;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -o-transition: .4s;
+}
+.applyLeft img:hover{
+    transform: scale(1.1);
+}
+.noBullet{
+    list-style-type: none;
+}
+/*******************
+QA CONTACT FORM
+********************/
+.contactForm h3{
+    margin: 7% 0;
+}
+.form-control{
+    border-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0;
+}
+.form-control:focus{
+    border-color: #ccc;
+    box-shadow: none;
+}
+#submit{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: #2997ab;
+    border-radius: 5px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+#submit:hover{
+    background: #55adbd;
+    border-color: #338b9b;
+}
+/*-----------------------------------kontakt.html-------------------------------*/
+.contact{
+     background-color: #f8f8f8;
+}
+.contact h1{
+    text-align: center;
+    font-weight: 900;
+}
+.box{
+    position: relative;
+    padding-top: 100px;
+}
+.box:hover .boxIcon i{
+    transform: rotate(360deg);
+}
+.boxIcon{
+    position: absolute;
+    top: -20px;
+    background-color: #2997ab;
+    width: 60px;
+    height: 60px;
+    padding-top: 13px;
+    margin-top: 50px;
+    border: 1px solid #2997ab;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boxIcon i{
+    font-size: 30px;
+    color: #fff;
+     transition: 1s;
+     -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+}
+.boxContent{
+    line-height: 5;
+    padding-top: 50px;
+}
+.boxContent h3{
+    font-size: 16px;
+    color: #555;
+}
+.boxContent a, .boxContent p{
+    font-size: 16px;
+    font-weight: 900;
+    color: #2997ab;
+}
+/*********
+MEDIA
+**********/
+@media (max-width: 1440px){
+    .glyphicon-chevron-left:before{
+        left: 5px;
+    }
+     .glyphicon-chevron-right:before{
+        right: 5px;
+    }
+    a.right.carousel-control, a.left.carousel-control{
+        width: 3%
+    }
+    .carousel-caption{
+        font-size: 16px;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .text{
+        max-width: 100%;
+    }
+@media (max-width: 991px){
+    .topLeft, .topRight, .middle, .bottom, footer, .qaSecurityKnowlage, .qaSecurityKnowlageText, .importanceLeft h3, .importanceRight h3, 
+    .main h1, .mainLeft, .mainRight, .qaContent h1, .qaContent h4, .qaContentText, .plan, .apllyText, .applyLeft, .applyTop h2, .contactForm,
+    .boxContent{
+        padding-top: 25px;
+    }
+    .topRight{
+        text-align: center;
+    }
+    .qaSecurityKnowlage{
+        padding-bottom: 25px;
+    }
+    .qaContent h1, .qaContent h4, .qaContentText{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 768px){
+    .navbar-nav{
+        float: none;
+    }
+    a.right.carousel-control, a.left.carousel-control, ol.carousel-indicators{
+        display: none;
+    }
+    .carousel-caption{
+        top: 20%;
+        padding: 0;
+    }
+    .importanceLeft ul, .importanceRight ul, .qaContent ul, .mainLeft ul, .apply ul{
+        padding-left: 15px;
+    }
+    .topRight img{
+        width: 50%;
+    }
+}
+@media (max-width: 575px){
+    .carousel-caption{
+        font-size: 14px;
+        top: 15%;
+    }
+}
+@media (max-width: 425px){
+    .logoAndNav img{
+        width: 80px;
+    }
+     .carousel-caption{
+        font-size: 10px;
+        top: 5%;
+     }
+     .carousel-caption h2{
+        font-size: 20px;
+     }
+}
+

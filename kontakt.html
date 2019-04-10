@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KONTAKT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- on load -->
+<div class="preLoad">
+	<div class="wrapp">
+		<div class="preloadContent">
+			<img src="images/thunder-logo.png" alt="thunder-logo">
+			<div class="spiner"></div>
+		</div>
+	</div>
+</div>
+<!-- end on load -->
+
+<!-- HEADER -->
+<div class="container logoAndNav">
+	<div class="row">
+		<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<a href="index.html"><img src="images/thunder-logo.png" alt="thunder-logo"></a>
+		</div>
+		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+			<nav class="navbar navbar-default">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="index.html">O NAMA <span class="sr-only">(current)</span></a></li>
+			        <li class="dropdown">
+			          <a href="kursevi.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">KURSEVI <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="qa-kurs.html">QA KURS</a></li>
+			          </ul>
+			        </li>
+			        <li><a href="kontakt.html" class="active">KONTAKT</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- end HEADER -->
+
+<!-- QA CONTACT -->
+<div class="container-fluid contact">
+	<div class="container">
+		<div class="row">
+			<h1>KONTAKT</h1>
+			<div class="col-sm-6 col-md-6 col-lg-6 text-center box">
+				<div class="boxIcon">
+					<i class="fa fa-phone" aria-hidden="true"></i>
+				</div>
+				<div class="boxContent">
+					<h3>TELEFON</h3>
+					<a href="tel:+38104285248">+381 60 428 52 48</a>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6 text-center box">
+				<div class="boxIcon">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+				</div>
+				<div class="boxContent">
+					<h3>E-MAIL</h3>
+					<a href="mailto:thundersolution@gmail.com">thundersolution@gmail.com</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4 col-md-4 col-lg-4"></div>
+			<div class="col-sm-4 col-md-4 col-lg-4 contactForm">
+				<form>
+					<div class="form-group">
+						<input type="text" id="name" class="form-control" placeholder="Ime i prezime">
+					</div>
+					<div class="form-group">						
+						<input type="email" class="form-control" id="email" placeholder="E-mail">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="phone" placeholder="Telefon">
+					</div>
+					<div class="form-group">
+						<input type="text" class="form-control" id="head" placeholder="Naslov">
+					</div>
+					<div class="form-group">
+    					<textarea class="form-control" id="msg" rows="7" placeholder="Poruka"></textarea>
+  					</div>
+						<button type="button" class="btn btn-primary" id="submit">POŠALJI</button>
+				</form>
+			</div>
+			<div class="col-sm-4 col-md-4 col-lg-4"></div>
+
+		</div>
+	</div>
+</div>
+<!-- end QA CONTACT -->
+
+<!-- FOOTER -->
+<footer class="text-center">
+	<div class="col-lg-12 pera">
+		<p>
+			All Rights Reserved © THUNDER SOLUTION
+		</p>
+	</div>
+</footer>
+<!-- end FOOTER -->
+
+
+	<script src="main.js"></script>
+</body>
+</html>
